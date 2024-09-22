@@ -1,0 +1,72 @@
+/* تعديل تخطيط العناصر والمسافة بينها لجهاز الكمبيوتر */
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.875rem;
+}
+
+/* تخصيص تنسيق بطاقة الخدمة */
+.services__card {
+    text-align: center;
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    background: var(--container-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* تكبير حجم البطاقة عند التحوي عليها */
+.services__card:hover {
+    transform: translateY(-10px);
+}
+
+/* تخصيص تنسيق بطاقة الخدمة الأولى */
+.services__card:nth-child(1) {
+    background: rgb(108, 108, 229);
+    box-shadow: 0px 5px 20px 0px rgb(108, 108, 229 / 50%);
+}
+
+/* تخصيص تنسيق بطاقة الخدمة الثانية */
+.services__card:nth-child(2) {
+    background: rgb(249, 215, 76);
+    box-shadow: 0px 5px 20px 0px rgb(249, 215, 76 / 50%);
+}
+
+/* تخصيص تنسيق بطاقة الخدمة الثالثة */
+.services__card:nth-child(3) {
+    background: rgb(249, 123, 139);
+    box-shadow: 0px 5px 20px 0px rgb(249, 123, 139 / 50%);
+}
+
+/* تخصيص تنسيق الصورة داخل بطاقة الخدمة */
+.services__img {
+    margin-bottom: 1.25rem;
+}
+
+/* تخصيص تنسيق عنوان الخدمة داخل بطاقة الخدمة */
+.services__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+    color: #fff; /* لون النص الأبيض */
+}
+
+/* تخصيص تنسيق وصف الخدمة داخل بطاقة الخدمة */
+.services__description {
+    color: #f8f9fa; /* لون النص الرمادي */
+}
+
+/* تخصيص لون عنوان الخدمة في بطاقة الخدمة الثانية */
+.services__card:nth-child(2) .services__title {
+    color: var(--title-color); /* لون العنوان الرئيسي */
+}
+
+.services__card:nth-child(2) .services__description {
+    color: var(--text-color); /* لون النص الرئيسي */
+}
+
+/* تعديل تخطيط العناصر والمسافة بينها لجهاز الجوال */
+@media (max-width: 768px) {
+    .services__container {
+        grid-template-columns: 1fr; /* عمود واحد لجهاز الجوال */
+        row-gap: 1.875rem; /* مسافة بين الصفوف لجهاز الجوال */
+    }
+}
