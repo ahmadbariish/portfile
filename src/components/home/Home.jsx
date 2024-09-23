@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/logo.svg';
 import './home.css';
 import { useState } from 'react';
 import {
@@ -26,7 +26,7 @@ import {
 const Home = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="bg-white">
+    <header className="bg-white fixed top-0 left-0 w-full z-50">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -48,19 +48,28 @@ const Home = () => {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="#contact"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Contact
           </a>
-          <a href="#services" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="#services"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Services
           </a>
-          <a href="#blog" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="#blog"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Posts
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-             <span aria-hidden="true">&rarr;</span>
+            <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
