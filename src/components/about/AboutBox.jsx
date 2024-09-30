@@ -9,23 +9,16 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 const AboutBox = () => {
   return (
-    <div className="about__boxes grid">
+    <div className="about__boxes flex justify-center align-middle">
       <div className="about__box">
         <i className="about__icon">
           <FontAwesomeIcon icon={faFire} />
         </i>
         <div>
           <h3 className="about__title">56</h3>
-          <span className="about__subtitle">Project completed</span>
-        </div>
-      </div>
-      <div className="about__box">
-        <i className="about__icon">
-          <FontAwesomeIcon icon={faMugHot} />
-        </i>
-        <div>
-          <h3 className="about__title">5670</h3>
-          <span className="about__subtitle">Cup of coffee</span>
+          <span className="about__subtitle">
+            المشروع مكتمل - تحقيق الأهداف بكفاءة واحترافية.
+          </span>
         </div>
       </div>
       <div className="about__box">
@@ -34,7 +27,7 @@ const AboutBox = () => {
         </i>
         <div>
           <h3 className="about__title">205</h3>
-          <span className="about__subtitle">Satisfied clients</span>
+          <span className="about__subtitle">عملاء راضون</span>
         </div>
       </div>
       <div className="about__box">
@@ -43,7 +36,7 @@ const AboutBox = () => {
         </i>
         <div>
           <h3 className="about__title">3</h3>
-          <span className="about__subtitle">Nominees winner</span>
+          <span className="about__subtitle">الجوائز & التكريمات</span>
         </div>
       </div>
     </div>

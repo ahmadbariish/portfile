@@ -9,7 +9,6 @@ import Pricing from './components/pricing/Pricing';
 import Testimonials from './components/testimonials/Testimonials';
 import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
-import Sidebar from './components/sidebar/Sidebar.jsx';
 import './index.css';
 
 class App extends Component {
@@ -17,14 +16,16 @@ class App extends Component {
     return (
       <div className="root">
         <main className="main">
+          
           <Home />
-          <About />
+          
           <Services />
-          <Resume />
-          <Portfoloi />
-          <Pricing />
-          <Testimonials />
           <Blog />
+          <Portfoloi />
+          <Testimonials />
+          <About />
+          <Resume />
+          <Pricing />
           <Contact />
         </main>
       </div>

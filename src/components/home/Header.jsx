@@ -28,13 +28,13 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
         isScrolled
-          ? 'bg-white bg-opacity-60 backdrop-blur-lg shadow-md'
+          ? "bg-opacity-60 backdrop-blur-lg shadow-md "
           : 'bg-transparent'
       }`}
     >
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-6  lg:px-8"
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5">
@@ -55,21 +55,21 @@ const Header = () => {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <a
             href="#contact"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-lg font-bold leading-6 text-gray-900"
           >
-            Contact
+            تواصل معنا لبدء مشروعك
           </a>
           <a
             href="#services"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-lg font-bold leading-6 text-gray-900"
           >
-            Services
+            الخدمات
           </a>
           <a
             href="#blog"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-lg font-bold leading-6 text-gray-900"
           >
-            Posts
+            المقالات
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">

@@ -6,18 +6,24 @@ const Contact = () => {
   const [state, handleSubmit] = useForm('xqkrwwld');
 
   if (state.succeeded) {
-    return <p>Thanks for contacting us!</p>;
+    return (
+      <div className="p-8 mt-10">
+        <div className="bg-white w-1/2 mx-auto p-4 rounded-md shadow-lg bg-gray-50">
+          <h1 className="text-2xl font-bold text-indigo-500 mb-4 text-center">
+            شكرًا لتواصلك معنا! سنقوم بالرد عليك في أقرب وقت ممكن.
+          </h1>
+        </div>
+      </div>
+    );
   }
 
   return (
     <section className="contact container section" id="contact">
-      <h2 className="section__title">Get In Touch</h2>
+      <h2 className="section__title">تواصل معنا</h2>
       <div className="contact__container grid">
         <div className="contact__info">
-          <h3 className="contact__title">Let's talk about everything!</h3>
-          <p className="contact__details">
-            Don't like forms? Send me an email. 👋
-          </p>
+          <h3 className="contact__title">دعنا نتحدث عن كل ما يهمك!</h3>
+          <p className="contact__details">تواصل عبر البريد الإلكتروني 👋</p>
         </div>
         <form onSubmit={handleSubmit} className="contact__form">
           <div className="contact__form-group">
@@ -25,7 +31,7 @@ const Contact = () => {
               <input
                 type="text"
                 className="contact__form-input"
-                placeholder="Insert your name"
+                placeholder="أدخل اسمك"
                 id="name"
                 name="name"
               />
@@ -34,7 +40,7 @@ const Contact = () => {
               <input
                 type="email"
                 className="contact__form-input"
-                placeholder="Insert your email"
+                placeholder="أدخل بريدك الإلكتروني"
                 id="email"
                 name="email"
               />
@@ -49,7 +55,7 @@ const Contact = () => {
             <input
               type="text"
               className="contact__form-input"
-              placeholder="Insert your subject"
+              placeholder="أدخل الموضوع"
               id="subject"
               name="subject"
             />
@@ -61,7 +67,7 @@ const Contact = () => {
               cols="30"
               rows="10"
               className="contact__form-input"
-              placeholder="Write your message "
+              placeholder="اكتب رسالتك"
             ></textarea>
             <ValidationError
               prefix="Message"
@@ -70,7 +76,7 @@ const Contact = () => {
             />
           </div>
           <button type="submit" className="btn" disabled={state.submitting}>
-            Send Message
+            إرسال
           </button>
         </form>
       </div>

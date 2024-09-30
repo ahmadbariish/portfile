@@ -6,22 +6,23 @@ import AboutBox from './AboutBox';
 const About = () => {
   return (
     <section className="about container section" id="about">
-      <h2 className="section__title">About Me</h2>
+      <h2 className="section__title">نبذة عني</h2>
       <div className="about__container grid">
         <img src={Image} alt="" className="about__img" />
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              I am Ahmad Barish, web developer. I have rich experience in web
-              site design and building and customization, also I am good at
-              WordPress.
+              أنا أحمد باريش، مهندس برمجيات متخصص في تطوير الحلول الرقمية
+              المبتكرة. أتمتع بخبرة غنية في تصميم وبناء الأنظمة والبرامج، مع
+              مهارات متقدمة في تطوير الويب وتخصيص المنصات المختلفة. أسعى دائمًا
+              لتقديم حلول فعالة تلبي احتياجات العملاء وتعزز من تجربتهم.
             </p>
             <a
               href={require('../../assets/ahmadbarish.pdf')}
               download="Ahmad_Barish.pdf"
               className="btn"
             >
-              Download CV
+              تحميل السيرة الذاتية
             </a>
           </div>
           <div className="about__skills grid">
