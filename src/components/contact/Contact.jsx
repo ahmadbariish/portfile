@@ -8,7 +8,7 @@ const Contact = () => {
   if (state.succeeded) {
     return (
       <div className="p-8 mt-10">
-        <div className="bg-white w-1/2 mx-auto p-4 rounded-md shadow-lg bg-gray-50">
+        <div className="bg-white mx-auto p-4 rounded-md shadow-lg bg-gray-50">
           <h1 className="text-2xl font-bold text-indigo-500 mb-4 text-center">
             شكرًا لتواصلك معنا! سنقوم بالرد عليك في أقرب وقت ممكن.
           </h1>
